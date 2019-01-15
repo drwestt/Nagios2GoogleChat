@@ -5,7 +5,7 @@ from json import dumps
 # Hangouts Chat incoming webhook quickstart
 #
 def main():
-    url = 'https://chat.googleapis.com/v1/spaces/AAAArebtt4Y/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=V0U3v6oaWQXNr-dwybp0J-rIwMq0l6QLNYbY3F01aB8%3D'
+    url = 'https://chat.googleapis.com/v1/spaces/AAAArebtt4Y/messages?key=xxxxxxxxxxxxxxxxxx&token=xxxxxxxxxxxxxxxxxxxxxxxxxxx'
     bot_message = {"text" : "Get the thread in the return " }
 
     message_headers = { 'Content-Type': 'application/json; charset=UTF-8'}

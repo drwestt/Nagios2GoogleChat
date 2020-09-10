@@ -7,8 +7,8 @@ Nagios notifications for Google Chat
 
 * Get thread id to push alert in the same thread by executing "python3 quickstart.py"
 
- Example output:
- ({'content-type': 'app............ **"thread": { "name": "spaces/AAAArebtt4Y/threads/Ks0DXiY1kZg"**  } ..........."createTime": "2020-08-15T07:37:23.566327Z"\n}\n')
+  Example output:
+ ({'content-type': 'app...... **"thread": { "name": "spaces/AAAArebtt4Y/threads/Ks0DXiY1kZg"**  } ....."createTime": "2020-08-15T07:37:23.566327Z"\n}\n')
 
 * Copy the script to your plugin directory. (paths may vary)
 

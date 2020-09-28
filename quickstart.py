@@ -1,14 +1,14 @@
-from httplib2 import Http
+#
+# Google Chat incoming webhook quickstart
+#
 from json import dumps
-
-#
-# Hangouts Chat incoming webhook quickstart
-#
+from httplib2 import Http
+# Install httplib2 library using "pip install httplib2"
 def main():
     url = 'https://chat.googleapis.com/v1/spaces/AAAArebtt4Y/messages?key=xxxxxxxxxxxxxxxxxx&token=xxxxxxxxxxxxxxxxxxxxxxxxxxx'
-    bot_message = {"text" : "Get the thread in the return " }
+    bot_message = { 'text' : 'Get the thread id in return!' }
 
-    message_headers = { 'Content-Type': 'application/json; charset=UTF-8'}
+    message_headers = {'Content-Type': 'application/json; charset=UTF-8'}
 
     http_obj = Http()
 
@@ -18,7 +18,6 @@ def main():
         headers=message_headers,
         body=dumps(bot_message),
     )
-
     print(response)
 
 if __name__ == '__main__':

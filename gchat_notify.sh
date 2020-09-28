@@ -8,7 +8,7 @@ id=spaces/xxxxxxxxx/threads/xxxxxxxx
 #
 # define command {
 #   command_name  gchat-service
-#   command_line  /usr/lib64/nagios/plugins/gchat_notify.sh "$NOTIFICATIONTYPE$" "$HOSTNAME$" "$HOSTADDRESS$" "$SERVICEDESC$" "$SERVICESTATE$" "$SERVICEOUTPUT$" "$LONGDATETIME$" "$LASTHOSTSTATECHANGE$"
+#   command_line  /usr/lib64/nagios/plugins/gchat_notify.sh "$NOTIFICATIONTYPE$" "$HOSTNAME$" "$HOSTADDRESS$" "$SERVICEDESC$" "$SERVICEOUTPUT$" "$LONGDATETIME$"
 # }
 
 # define command {
@@ -23,7 +23,7 @@ curl -4 -X POST \
   "$url" \
   -H 'Content-Type: text/json; charset=utf-8' \
   -d '{
-    "text": "*'$2'*:'$4'\n*'$5'*\nNotification: '$6'",
+    "text": "*`'$2'`:`'$4'`*\n```Notification: '$5'\n'$6'```",
     "thread": {
         "name": "'$id'"
     }
